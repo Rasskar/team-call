@@ -1,12 +1,41 @@
-@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap');
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source "../**/*.blade.php";
-@source "../**/*.js";
-@source "../**/*.vue";
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+/* Убираем стандартные стили у списков */
+ul, ol {
+    list-style: none;
+}
+
+/* Убираем подчеркивание у ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Базовые переменные */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --black: #171717;
+    --gray: #333;
+    --white: #f9f9f9;
+    --danger: #DA0038;
+    --orange: #FF4C2B;
+    --success: #33CC33;
+    --font-main: 'Poppins', sans-serif;
+}
+
+/* Базовые стили */
+body {
+    font-family: var(--font-main);
+    background-color: var(--gray);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
 }
